@@ -4,8 +4,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './Screens/LoginScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import DataScreen from './Screens/DataScreen';
+import { AppNativeParamsList } from './type';
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator<AppNativeParamsList>()
 
 
 export default function App() {
